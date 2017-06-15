@@ -20,7 +20,7 @@
             "title": "Slices of the 4th Dimension!",
             "href": "http://arjo1203.github.io/QuadricSurfaces/app/app.html",
             "imgSrc": "./assets/imgs/quadSurf.png",
-            "projectDesc": "I am created this app for a Math Talk. The Math Talk expands on the concept of the Conic Sections, where the Conic Sections can describe a higher dimensional shape, in this case a cone. This app shows quadric surfaces, which are cross sections of a 4-D shape. By exposing ourselves as much as possible to these cross sections, could potential help describe a 4D shape!"
+            "projectDesc": "This app plots any 3D cross section of a 4D object. On the left is the fimilar concept of the Conic Sections, and on the right is the plot of the 3D cross section."
         },
         {
             "new": false,
@@ -51,5 +51,6 @@
             "lvlLabel": "Intermediate",
             "lvlPct": "60%"
         }
-    ]
+    ],
+    "projectCols": 2
 }

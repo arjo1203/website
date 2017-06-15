@@ -1,6 +1,5 @@
 website.controller('homeController', ['$scope', '$content', function($scope, $content) {
 	$content.success(function(data) {
-		// console.log(data);
 		$scope.name = data.name;
 		$scope.job = data.job;
 		$scope.about = data.about;
@@ -10,8 +9,8 @@ website.controller('homeController', ['$scope', '$content', function($scope, $co
 			name: $scope.name,
 			job: $scope.job
 		};
+		$scope.projectCols = data.projectCols;
 	});
-	// console.log($scope);
 }]);
 
 

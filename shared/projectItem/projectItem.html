@@ -1,23 +1,16 @@
-<div class="container ">
-    <div class="row project">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="item featured text-center">
-                <h3 class="title"><a href="{{info.href}}">{{info.title}}!</a></h3>
-                <div class="featured-image">
-                    <a href="{{info.href}}">
-                    <img class="img-fluid img-responsive" ng-src="{{info.imgSrc}}" />
-                    </a>
-                    <div ng-if="info.new" class="ribbon">
-                        <div class="text">New</div>
-                    </div>
-                </div>
+<div class="project">
+    <div class="item featured text-center">
+        <h3 class="title"><a href="{{info.href}}">{{info.title}}!</a></h3>
+        <div class="featured-image">
+            <a href="{{info.href}}">
+            <img class="img-fluid img-responsive" ng-src="{{info.imgSrc}}" />
+            </a>
+            <div ng-if="info.new" class="ribbon">
+                <div class="text">New</div>
             </div>
         </div>
-
-        <div class="col-md-5 col-sm-12 col-xs-12">
-            <div class="desc text-left">
-                <p>{{info.projectDesc}}</p>
-            </div>
-        </div>
+    </div>
+    <div class="desc text-left">
+        <p>{{info.projectDesc}}</p>
     </div>
 </div>
