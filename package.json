@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personl website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjo1203/website.git"
+  },
+  "keywords": [
+    "website",
+    "git",
+    "developer"
+  ],
+  "author": "José Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjo1203/website/issues"
+  },
+  "homepage": "https://github.com/arjo1203/website#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
