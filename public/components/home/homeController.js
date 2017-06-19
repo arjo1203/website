@@ -11,7 +11,7 @@ website.controller('homeController', ['$scope', '$content', '$window', function(
 		$scope.updateProjects();
 	};
 	$scope.layoutProjects = function (width) {
-		if(width < 767) {
+		if(width < 1170) {
 			$('#project-btns').hide();
 			$scope.projectCols = 1;
 			$scope.updateProjects();
