@@ -1,4 +1,4 @@
-body {
+#ui-view-div {
 	overflow-x: hidden;
 }
 
@@ -130,7 +130,6 @@ body {
 }
 
 
-
 @media (max-width: 900px) {
     .contactForm {
       width:100%;
@@ -189,6 +188,8 @@ input:focus,textarea:focus {
     }
     header {
       height:50px;
+      margin: 0;
+      padding: 0;
     }
     header .logo {
       display:none;

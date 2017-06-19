@@ -100,14 +100,18 @@
 
 <!-- contact us form -->
 <div class="jumbotron contact-me-jumbo">
-    <div class="container center-50">
-        <h1>Contact Me</h1>
-        <form ng-submit="save()" name="form" ng-hide="loaded">
-            <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
-            <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
-            <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
-            <button class="btn btn-success">Send Message</button>
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                <h1>Contact Me</h1>
+                <form ng-submit="save()" name="form" ng-hide="loaded">
+                    <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
+                    <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
+                    <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
+                    <button class="btn btn-success">Send Message</button>
+                </form>
+            </div>
+        </div>
 
         <!-- contact us form response messages -->
         <!--<div ng-show="process" style="text-align:center">
