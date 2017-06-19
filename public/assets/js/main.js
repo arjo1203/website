@@ -40,6 +40,9 @@
 
     });
 
+
+
+
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
 

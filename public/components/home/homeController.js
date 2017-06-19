@@ -34,6 +34,8 @@ website.controller('homeController', ['$scope', '$content', '$window', function(
 				job: $scope.job
 			};
 			$scope.profilePicSrc = data.profilePicSrc;
+			$scope.education = data.education;
+			$scope.footer = data.footer;
 			$scope.layoutProjects($window.innerWidth);
 		});
 	};
