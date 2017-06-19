@@ -309,8 +309,8 @@ input:focus,textarea:focus {
 }
 .header .profile-content .list-inline {
   padding: 10px;
-  width: 70%;
-  margin: auto;
+  /*width: 70%;*/
+  /*margin: auto;*/
 }
 .header .profile-content .social a:hover {
   background: #778492;
