@@ -1,14 +1,20 @@
 {
     "name": "José R. Araújo",
-    "profilePicSrc": "./assets/imgs/puertoViejo6.jpg",
+    "profilePicSrc": "./assets/imgs/puertoViejo3.jpg",
     "about": {
         "introHeading": "Hello World!",
         "intro": "I have a bachelor's in computer engineering from St. Cloud State University (SCSU) and currently work at 3M as an Application Analyst. I spend my free time doing variety of things like firmware and application development, PCB design, fishing, cooking, problem solving, etc. I am always in the lookout for great challenge and enjoy a beer at the local bar.",
         "bg": "./assets/imgs/northern-lights.jpg"
     },
+    "education": {
+        "degree": "BSCompE Computer Engineering",
+        "university": "Saint Cloud State University (SCSU)",
+        "year": "(2012 - 2017)"
+    },
     "job": {
         "title": "Application Analyst"
     },
+    "footer": "My Awesome Creative Website!",
     "projects": [
         {
             "new": false,

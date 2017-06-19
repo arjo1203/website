@@ -1,47 +1,39 @@
-<!--<div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <img id="aboutMeBg" class=" img-fluid img-responsive" ng-src="{{about.bg}}" />
-    </div>
-</div>-->
-
-    <div class="paddRow aboutRow">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <img id="profilePicture" class="profile-image img-fluid img-responsive " src="{{profilePicSrc}}" alt="Jose Araujo"/>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <home-header info="header"></home-header>
-                    <info-section info="about"></info-section>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <aside class="education aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Education</h2>
-                            <div class="content">
-                                <div class="item">
-                                    <h3 class="title"><i class="fa fa-graduation-cap"></i>BSCompE Computer Engineering</h3>
-                                    <h4 class="university">Saint Cloud State University <span class="year">(2012 - 2017)</span></h4>
-                                </div><!--//item-->
-                            </div><!--//content-->
-                        </div><!--//section-inner-->
-                    </aside><!--//section-->
-                    <aside class="skills aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Skills</h2>
-                            <div class="content">
-                                <div class="skillset" ng-repeat="skill in skills">
-                                    <skill-item info="skill"></skill-item>
-                                </div>
-                            </div><!--//content-->
-                        </div><!--//section-inner-->
-                    </aside><!--//section-->
-                </div>
+<div class="paddRow carbon-fibre">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <img id="profilePicture" class="profile-image img-fluid img-responsive " src="{{profilePicSrc}}" alt="Jose Araujo"/>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <home-header info="header"></home-header>
+                <info-section info="about"></info-section>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading"><i class="fa fa-graduation-cap"></i> Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">{{education.degree}}</h3>
+                                <h4 class="university">{{education.university}}<span class="year"> <br>{{education.year}}</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset" ng-repeat="skill in skills">
+                                <skill-item info="skill"></skill-item>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </div>
-
-
+</div>
 
 
 <div class="row">
@@ -51,7 +43,7 @@
 </div>
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
-        <form class="form-inline align center_div" id="project-btns" style="width:420px;">
+        <form class="form-inline center_div" id="project-btns" style="width:420px;">
             <label>Projects Per Row: </label>
             <button ng-click="setProjectCols(i)" class="btn btn-default btn-row" ng-repeat="i in divides12">{{i}}</button>
         </form>
@@ -66,38 +58,6 @@
 </div>
 
 
-<!--<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8 col-sm-12 col-xs-12">
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="user-name">Name</label>
-                    <input type="name" class="form-control" id="user-name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="user-email">Email</label>
-                    <input type="email" class="form-control" id="user-email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="user-email-subject">Subject</label>
-                    <input type="password" class="form-control" id="user-email-subject" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="3"></textarea>
-                    <hr class="divider"/>
-                    <button type="submit" class="btn btn-default">Send Message</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
-</div>-->
-
-
-
 <!-- contact us form -->
 <div class="jumbotron contact-me-jumbo">
     <div class="container">
@@ -108,7 +68,7 @@
                     <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
                     <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
                     <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
-                    <button class="btn btn-success">Send Message</button>
+                    <button class="btn contact-me-btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -122,10 +82,6 @@
 </div>
 
 
-<div class="footer">
-    <div style="width: 230px;margin: auto;">
-        <p>My Awesome Creative Website!</p>
-    </div>
+<div class="row carbon-fibre">
+    <wb-footer info="footer"></wb-footer>
 </div>
-
-
