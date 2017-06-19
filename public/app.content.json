@@ -1,6 +1,6 @@
 {
     "name": "José R. Araújo",
-    "profilePicSrc": "./assets/imgs/puertoViejo.jpg",
+    "profilePicSrc": "./assets/imgs/puertoViejo2.jpg",
     "about": {
         "introHeading": "Hello World!",
         "intro": "I currently attend Saint Cloud State University (SCSU) and work as a developer for the Visualization Lab in SCSU. Being the first member in my family to attend a university, I've faced many obstacles but I have always managed to overcome these challenges! I love to learn and deeply understand new topics. I make unique and simple accessible web apps with the focus of visualization.",
@@ -53,6 +53,5 @@
             "lvlLabel": "Intermediate",
             "lvlPct": "70%"
         }
-    ],
-    "projectCols": 1
+    ]
 }
