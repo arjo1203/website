@@ -1,4 +1,5 @@
 website.controller('homeController', ['$scope', '$content', '$window', function($scope, $content, $window) {
+	$scope.window = $window;
 	$scope.projectCols = 2;
 	$scope.divides12 = [1,2,3,4,6];		// since bootstrap grid is divided into 12 sections
 	$scope.updateProjects = function() {
@@ -30,21 +31,16 @@ website.controller('homeController', ['$scope', '$content', '$window', function(
 	var appWindow = angular.element($window);
 	$scope.trig = false;
 
-	// appWindow.bind('resize', function (e) {
-	// 	// console.log('Resized your browser');
-	// 	// console.log(e);
-	// 	// console.log(e.target.innerWidth);
-
-	// 	if(e.target.innerWidth < 767) {
-	// 		if(!$scope.trig) {
-	// 			$('#headerBgImg').hide();
-	// 			$scope.trig = true;
-	// 		}
-	// 	}
-	// 	else {
-
-	// 	}
-	// });
+	appWindow.bind('resize', function (e) {
+		if(e.target.innerWidth < 767) {
+			$('#project-btns').hide();
+			$scope.projectCols = 1;
+			$scope.updateProjects();
+		}
+		else {
+			$('#project-btns').show();
+		}
+	});
 }]);
 
 
