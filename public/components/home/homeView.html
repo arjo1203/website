@@ -99,10 +99,10 @@
 
 
 <!-- contact us form -->
-<div class="paddRow">
-    <div class="wrap container">
-        <div class="head">Contact Me</div>
-        <form ng-submit="save()" class="contactForm" name="form" ng-hide="loaded">
+<div class="jumbotron contact-me-jumbo">
+    <div class="container center-50">
+        <h1>Contact Me</h1>
+        <form ng-submit="save()" name="form" ng-hide="loaded">
             <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
             <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
             <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
@@ -116,3 +116,12 @@
         <div ng-show="success"><p>Your message has been sent, thank you.</p></div>-->
     </div>
 </div>
+
+
+<div class="footer">
+    <div style="width: 230px;margin: auto;">
+        <p>My Awesome Creative Website!</p>
+    </div>
+</div>
+
+

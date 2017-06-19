@@ -3,7 +3,7 @@ body {
 }
 
 #profilePicture {
-	height: 580px;
+	/*height: 580px;*/
 	border-radius: 5px;
 	margin-bottom: 30px;
 }
@@ -15,6 +15,9 @@ body {
 	height: 100%;*/
 	top: 0;
 	left: 0;
+}
+.contact-me-jumbo {
+  margin: 0;
 }
 .main-section {
     position:relative;
@@ -103,7 +106,7 @@ body {
 .paddRow .head {
 	font-size:3em;
 	font-weight:100;
-	margin: auto;
+	/*margin: auto;*/
 	width:50%;
 }
 .paddRow .close {
@@ -116,8 +119,14 @@ body {
 
 
 .contactForm {
-	margin: auto;
-  	width:50%;
+	/*margin: auto;*/
+  width:50%;
+}
+
+
+.center-50 {
+  margin: auto;
+  width:50%;
 }
 
 
@@ -125,6 +134,9 @@ body {
 @media (max-width: 900px) {
     .contactForm {
       width:100%;
+    }
+    #profilePicture {
+      height: 580px;
     }
 }
 
