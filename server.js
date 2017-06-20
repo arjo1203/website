@@ -42,7 +42,6 @@ app.post('/sendmail', function(req, res){
 });
 
 // Start server
-var port = 8080, ip = "127.0.0.1";
-app.listen(port, ip, function() {
-    console.log("Server: On %s:%d", ip, port);
-});
+var port = 8080;
+app.listen(port);
+console.log("Server: On %d", port);
