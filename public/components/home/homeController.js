@@ -1,4 +1,4 @@
-website.controller('homeController', ['$scope', '$content', '$window', function($scope, $content, $window) {
+website.controller('homeController', ['$scope', '$content', '$window', '$http', function($scope, $content, $window, $http) {
 	$scope.projectCols = 2;
 	$scope.divides12 = [1,2,3,4,6];		// since bootstrap grid is divided into 12 sections
 	$scope.updateProjects = function() {
@@ -21,7 +21,23 @@ website.controller('homeController', ['$scope', '$content', '$window', function(
 			$scope.projectCols = 2;
 			$scope.updateProjects();
 		}
+
+		if(width < 750) {
+			$('#projectHeader').html("Projects");
+		}
+		else {
+			$('#projectHeader').html("Projects = Free Time");
+		}
 	};
+
+
+	$scope.msg = {
+		name: "",
+		email: "",
+		content: ""
+	};
+
+
 	$scope.init = function() {
 		$content.getContent().success(function(data) {
 			$scope.name = data.name;
@@ -46,6 +62,26 @@ website.controller('homeController', ['$scope', '$content', '$window', function(
 	appWindow.bind('resize', function (e) {
 		$scope.layoutProjects(e.target.innerWidth);
 	});
+
+
+	$scope.loading = false;
+	$scope.send = function (msg){
+		$scope.loading = true;
+		$http.post('/sendmail', {
+			from: msg.email,
+			to: 'pw9099uy@gmail.com',
+			subject: msg.email,
+			text: msg.content + "\n\n- " + msg.name
+		}).then(res=>{
+			$scope.loading = false;
+			$scope.serverMessage = 'Email sent successfully';
+		});
+	};
+
+	$scope.sendEmail = function() {
+		console.log($scope.msg);
+		$scope.send($scope.msg);
+	};
 }]);
 
 

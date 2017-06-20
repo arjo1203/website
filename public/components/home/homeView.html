@@ -36,9 +36,15 @@
 </div>
 
 
-<div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <h2 id="projectHeader" class="heading text-center">Projects = Free Time</h2>
+
+
+<div class="jumbotron no-bg">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 id="projectHeader" class="heading text-center">Projects = Free Time</h2>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -65,10 +71,10 @@
             <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
                 <h1>Contact Me</h1>
                 <form ng-submit="save()" name="form" ng-hide="loaded">
-                    <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
-                    <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
-                    <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
-                    <button class="btn contact-me-btn">Send Message</button>
+                    <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="msg.name" />
+                    <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="msg.email" /><br />
+                    <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="msg.content" ></textarea>
+                    <button ng-click="sendEmail()" class="btn contact-me-btn">Send Message</button>
                 </form>
             </div>
         </div>

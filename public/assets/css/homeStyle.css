@@ -45,8 +45,11 @@
 .whitesmoke {
 	background: whitesmoke;
 }
+.no-bg {
+  background: none !important;
+}
 .project {
-	border: 1px solid gray;
+	border: 1px solid #b22222;
 	border-radius: 5px;
 	background: whitesmoke;
 }
@@ -149,7 +152,7 @@
 input,textarea {
   -webkit-appearance: none;
   background-color: #f7f7f7;
-  border: none;
+	border: 1px solid #b22222;
   border-radius: 3px;
   font-size:  16px;
   font-weight: 100;
