@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/arjo1203/website#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.14.2",
+    "express": "^4.15.3",
+    "nodemailer": "^2.1.0",
+    "nodemailer-sendgrid-transport": "^0.2.0"
   }
 }
