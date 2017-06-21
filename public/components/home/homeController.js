@@ -11,7 +11,7 @@ website.controller('homeController', ['$scope', '$content', '$window', '$http', 
 		$scope.updateProjects();
 	};
 	$scope.layoutProjects = function (width) {
-		if(width < 1170) {
+		if(width < 1050) {
 			$('#project-btns').hide();
 			$scope.projectCols = 1;
 			$scope.updateProjects();
@@ -24,9 +24,13 @@ website.controller('homeController', ['$scope', '$content', '$window', '$http', 
 
 		if(width < 750) {
 			$('#projectHeader').html("Projects");
+			// $('.project-head').removeClass( "col-md-12" ).addClass( "col-md-7" );
+			// $('.project-img').removeClass( "col-md-12" ).addClass( "col-md-5" );
 		}
 		else {
 			$('#projectHeader').html("Projects = Free Time");
+			// $('.project-head').removeClass( "col-md-7" ).addClass( "col-md-12" );
+			// $('.project-img').removeClass( "col-md-5" ).addClass( "col-md-12" );
 		}
 	};
 
