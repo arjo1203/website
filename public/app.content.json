@@ -3,7 +3,7 @@
     "profilePicSrc": "./assets/imgs/puertoViejo3.jpg",
     "about": {
         "introHeading": "Hello World!",
-        "intro": "I have a bachelor's in computer engineering from St. Cloud State University (SCSU) and currently work at 3M as an Application Analyst. I spend my free time doing variety of things like firmware and application development, PCB design, fishing, cooking, problem solving, etc. I am always in the lookout for great challenge and enjoy a beer at the local bar.",
+        "intro": "I have a bachelor's in computer engineering from St. Cloud State University (SCSU) and currently work at 3M as an Application Analyst. I spend my free time doing variety of things like firmware and application development, PCB design, fishing, cooking, problem solving, etc. I am always on the look out for a new challenge and enjoy occasional drinks at the local bar.",
         "bg": "./assets/imgs/northern-lights.jpg"
     },
     "education": {
@@ -17,21 +17,18 @@
     "footer": "My awesome creative website!",
     "projects": [
         {
-            "new": false,
             "title": "Nerdboard",
             "href": "http://arjo1203.github.io/NerdboardFabric/nerdboard.html",
             "imgSrc": "./assets/imgs/NerdboardFabric.png",
             "projectDesc": "Interactive online whiteboard to brainstorm, do homework, or just doddle!"
         },
         {
-            "new": false,
             "title": "Slices of the 4th Dimension!",
             "href": "http://arjo1203.github.io/QuadricSurfaces/app/app.html",
             "imgSrc": "./assets/imgs/quadSurf.png",
             "projectDesc": "This app plots any 3D cross section of a 4D object. On the left is the fimilar concept of the Conic Sections, and on the right is the plot of the 3D cross section."
         },
         {
-            "new": false,
             "title": "Find a number of length n in the Fibonacci Sequence",
             "href": "http://arjo1203.github.io/projectEuler/fibonacciSequenceOp.html",
             "imgSrc": "./assets/imgs/fibonacciSequenceOp.png",
