@@ -57,33 +57,10 @@
 </div>
 <div class="container">
     <div class="row" ng-repeat="i in [] | nRange:projects.length:projectCols">
+        <hr class="featurette-divider">
         <div class="col-md-{{12/projectCols}} col-sm-12 col-xs-12" ng-repeat="j in [] | range:projectCols-1">
             <project-item ng-if="projects[i+j]" info="projects[i+j]"></project-item>
         </div>
-    </div>
-</div>
-
-
-<!-- contact us form -->
-<div class="jumbotron contact-me-jumbo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                <h1>Contact Me</h1>
-                <form ng-submit="save()" name="form" ng-hide="loaded">
-                    <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="msg.name" />
-                    <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="msg.email" /><br />
-                    <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="msg.content" ></textarea>
-                    <button ng-click="sendEmail()" class="btn contact-me-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- contact us form response messages -->
-        <!--<div ng-show="process" style="text-align:center">
-            <img class="loader" src="images/loader.png" />
-        </div>
-        <div ng-show="success"><p>Your message has been sent, thank you.</p></div>-->
     </div>
 </div>
 

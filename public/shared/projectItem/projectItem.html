@@ -1,4 +1,4 @@
-<div class="project">
+<!--<div class="project">
     <div class="item featured text-center">
         <h3 class="title"><a href="{{info.href}}">{{info.title}}!</a></h3>
         <div class="featured-image">
@@ -14,4 +14,15 @@
     <div class="desc text-left">
         <p>{{info.projectDesc}}</p>
     </div>
-</div>
+</div>-->
+
+
+
+    <div class="col-md-7 col-sm-12 col-xs-12 project-head">
+        <h2 class="featurette-heading">{{info.title}}!</h2>
+        <p class="lead">{{info.projectDesc}}</p>
+    </div>
+    <div class="col-md-5 col-sm-12 col-xs-12 project-img">
+        <a href="{{info.href}}"><img class="featurette-image img-responsive center-block" ng-src="{{info.imgSrc}}" alt="Generic placeholder image"></a>
+    </div>
+
