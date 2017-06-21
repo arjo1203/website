@@ -1,17 +1,21 @@
 website.controller('homeController', ['$scope', '$content', '$window', '$http', function($scope, $content, $window, $http) {
 	$scope.projectCols = 1;
+	$scope.maxWidth = 970;
 	$scope.divides12 = [1,2,3,4,6];		// since bootstrap grid is divided into 12 sections
 	$scope.updateProjects = function() {
 		$content.getContent().success(function(data) {
 			$scope.projects = data.projects;
-			console.log($window.innerWidth);
-			if(($window.innerWidth > 750) && ($scope.projectCols == 1)) {
-				$('.project-head').removeClass( "col-md-12" ).addClass( "col-md-7" );
-				$('.project-img').removeClass( "col-md-12" ).addClass( "col-md-5" );
+			if(($window.innerWidth > $scope.maxWidth) && ($scope.projectCols == 1)) {
+				if($('.project-head').hasClass( "col-md-12" )) {
+					$('.project-head').removeClass( "col-md-12" ).addClass( "col-md-7" );
+					$('.project-img').removeClass( "col-md-12" ).addClass( "col-md-5" );
+				}
 			}
 			else {
-				$('.project-head').removeClass( "col-md-7" ).addClass( "col-md-12" );
-				$('.project-img').removeClass( "col-md-5" ).addClass( "col-md-12" );
+				if($('.project-head').hasClass( "col-md-7" )) {
+					$('.project-head').removeClass( "col-md-7" ).addClass( "col-md-12" );
+					$('.project-img').removeClass( "col-md-5" ).addClass( "col-md-12" );
+				}
 			}
 		});
 	};
@@ -20,33 +24,15 @@ website.controller('homeController', ['$scope', '$content', '$window', '$http', 
 		$scope.updateProjects();
 	};
 	$scope.layoutProjects = function (width) {
-		if(width < 1050) {
+		if(width < $scope.maxWidth) {
 			$('#project-btns').hide();
-			$scope.projectCols = 1;
+			$('#projectHeader').html("Projects");
 		}
 		else {
 			$('#project-btns').show();
-			$scope.projectCols = 2;
+			$('#projectHeader').html("Projects = Free Time");
 		}
 		$scope.updateProjects();
-
-		if(width < 750) {
-			$('#projectHeader').html("Projects");
-			// $('.project-head').removeClass( "col-md-12" ).addClass( "col-md-7" );
-			// $('.project-img').removeClass( "col-md-12" ).addClass( "col-md-5" );
-		}
-		else {
-			$('#projectHeader').html("Projects = Free Time");
-			// $('.project-head').removeClass( "col-md-7" ).addClass( "col-md-12" );
-			// $('.project-img').removeClass( "col-md-5" ).addClass( "col-md-12" );
-		}
-	};
-
-
-	$scope.msg = {
-		name: "",
-		email: "",
-		content: ""
 	};
 
 
@@ -71,29 +57,9 @@ website.controller('homeController', ['$scope', '$content', '$window', '$http', 
 
 	var appWindow = angular.element($window);
 
-	appWindow.bind('resize', function (e) {
-		$scope.layoutProjects(e.target.innerWidth);
+	appWindow.bind('resize', function () {
+		$scope.layoutProjects($window.innerWidth);
 	});
-
-
-	$scope.loading = false;
-	$scope.send = function (msg){
-		$scope.loading = true;
-		$http.post('/sendmail', {
-			from: msg.email,
-			to: 'pw9099uy@gmail.com',
-			subject: msg.email,
-			text: msg.content + "\n\n- " + msg.name
-		}).then(res=>{
-			$scope.loading = false;
-			$scope.serverMessage = 'Email sent successfully';
-		});
-	};
-
-	$scope.sendEmail = function() {
-		console.log($scope.msg);
-		$scope.send($scope.msg);
-	};
 }]);
 
 
