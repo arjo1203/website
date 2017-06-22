@@ -14,8 +14,26 @@
     "job": {
         "title": "Application Analyst"
     },
-    "footer": "My awesome creative website!",
+    "footer": "Engineering it up!",
     "projects": [
+        {
+            "title": "Trackable Gadget for Virtual Reality",
+            "href": "",
+            "imgSrc": "./assets/imgs/trackable-gadget-pcb.jpg",
+            "projectDesc": "Senior Design Project during my undergrad at SCSU. The gadget can interface with the HTC Vive Lighthouse and convert the IR light signals into patterns that can be converted in to angles. With a very clever posititioning algorithm, the trackable gadget providea the neccessary information to be positioned related to the Lighthouse. My main contribution to the project was hardware design consisting of a transimpedance amplifier and PCB design and assembly."
+        },
+        {
+            "title": "Function Generator and Pulse Measurement",
+            "href": "",
+            "imgSrc": "./assets/imgs/fn-gen-pulse-meas.jpg",
+            "projectDesc": "Designed and implemented a square-wave function generator and pulse measurer in C utilizing a PIC16F4455-I/PT. The data is transmitted over bluetooth (RN-42 rs232) and visualized with a C# Visual Studio Forms Application."
+        },
+        {
+            "title": "Amplitude Shift Key (ASK) Communication System",
+            "href": "",
+            "imgSrc": "./assets/imgs/ece316-final-project.jpg",
+            "projectDesc": "Designed and implemented an electrical system that consisted of a transmitter and receiver of a data signal. The system operates with a carrier frequency of about 125 kHz, the bandwidth was limited to the op amps supplied."
+        },
         {
             "title": "Nerdboard",
             "href": "http://arjo1203.github.io/NerdboardFabric/nerdboard.html",
@@ -37,6 +55,31 @@
     ],
     "skills": [
         {
+            "title": "Altium",
+            "lvlLabel": "Imtermediate",
+            "lvlPct": "70%"
+        },
+        {
+            "title": "C#",
+            "lvlLabel": "Imtermediate",
+            "lvlPct": "75%"
+        },
+        {
+            "title": "C / C++",
+            "lvlLabel": "Imtermediate",
+            "lvlPct": "90%"
+        },
+        {
+            "title": "Python",
+            "lvlLabel": "Beginner",
+            "lvlPct": "70%"
+        },
+        {
+            "title": "MEAN",
+            "lvlLabel": "Advance",
+            "lvlPct": "40%"
+        },
+        {
             "title": "English",
             "lvlLabel": "Advance",
             "lvlPct": "100%"
@@ -45,16 +88,6 @@
             "title": "Spanish",
             "lvlLabel": "Advance",
             "lvlPct": "100%"
-        },
-        {
-            "title": "Javascript",
-            "lvlLabel": "Intermediate",
-            "lvlPct": "80%"
-        },
-        {
-            "title": "AngularJS",
-            "lvlLabel": "Intermediate",
-            "lvlPct": "70%"
         }
     ]
 }
