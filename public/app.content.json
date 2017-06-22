@@ -14,13 +14,17 @@
     "job": {
         "title": "Application Analyst"
     },
-    "footer": "Engineering it up!",
+    "footer": {
+        "title": "Engineering it up!",
+        "leftImgSrc": "./assets/imgs/motherboard-schematic-bt.png",
+        "rightImgSrc": "./assets/imgs/motherboard-pcb-2d-bt.png"
+    },
     "projects": [
         {
             "title": "Trackable Gadget for Virtual Reality",
             "href": "",
-            "imgSrc": "./assets/imgs/trackable-gadget-pcb.jpg",
-            "projectDesc": "Senior Design Project during my undergrad at SCSU. The gadget can interface with the HTC Vive Lighthouse and convert the IR light signals into patterns that can be converted in to angles. With a very clever posititioning algorithm, the trackable gadget providea the neccessary information to be positioned related to the Lighthouse. My main contribution to the project was hardware design consisting of a transimpedance amplifier and PCB design and assembly."
+            "imgSrc": "./assets/imgs/pcbs.png",
+            "projectDesc": "Senior Design Project during my undergrad at SCSU. The trackable gadget interfaces with a HTC Vive Lighthouse and converts the IR light signals into angles. The gadget reports a horizontal and vertical angle per each photodector. With a very clever positioning algorithm, our project was very close to being completed. Gladly, the purpose of the project was to demonstrate that we were able to build a fully functioning electrical system. My main contribution to the project was hardware design, consisting of a transimpedance amplifier and PCB design and assembly."
         },
         {
             "title": "Function Generator and Pulse Measurement",
@@ -32,7 +36,7 @@
             "title": "Amplitude Shift Key (ASK) Communication System",
             "href": "",
             "imgSrc": "./assets/imgs/ece316-final-project.jpg",
-            "projectDesc": "Designed and implemented an electrical system that consisted of a transmitter and receiver of a data signal. The system operates with a carrier frequency of about 125 kHz, the bandwidth was limited to the op amps supplied."
+            "projectDesc": "Designed and implemented an electrical system that consisted of a transmitter and receiver of a digital signal. The system utilized transistors for logic, amplification, buffering, current mirroring, switching, oscillating, and envelope detector."
         },
         {
             "title": "Nerdboard",
@@ -41,7 +45,7 @@
             "projectDesc": "Interactive online whiteboard to brainstorm, do homework, or just doddle!"
         },
         {
-            "title": "Slices of the 4th Dimension!",
+            "title": "Slices of the 4th Dimension",
             "href": "http://arjo1203.github.io/QuadricSurfaces/app/app.html",
             "imgSrc": "./assets/imgs/quadSurf.png",
             "projectDesc": "This app plots any 3D cross section of a 4D object. On the left is the fimilar concept of the Conic Sections, and on the right is the plot of the 3D cross section."
