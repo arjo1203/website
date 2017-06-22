@@ -49,14 +49,14 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <form class="form-inline center_div" id="project-btns" style="width:420px;">
             <label>Projects Per Row: </label>
-            <button ng-click="setProjectCols(i)" class="btn btn-default btn-row" ng-repeat="i in divides12">{{i}}</button>
+            <button ng-click="projsMan.setOProjsPerRow(i)" class="btn btn-default btn-row" ng-repeat="i in divides12">{{i}}</button>
         </form>
     </div>
 </div>
 <div class="container">
-    <div class="row" ng-repeat="i in [] | nRange:projects.length:projectCols">
+    <div class="row" ng-repeat="i in [] | nRange:projects.length:projsMan.projsPerRow">
         <hr class="featurette-divider">
-        <div class="col-md-{{12/projectCols}} col-sm-12 col-xs-12" ng-repeat="j in [] | range:projectCols-1">
+        <div class="col-md-{{12/projsMan.projsPerRow}} col-sm-12 col-xs-12" ng-repeat="j in [] | range:projsMan.projsPerRow-1">
             <project-item ng-if="projects[i+j]" info="projects[i+j]"></project-item>
         </div>
         <hr class="featurette-divider">
